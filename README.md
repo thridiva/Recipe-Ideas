@@ -1,5 +1,7 @@
 🧑‍🍳 Recipe Ideas – Smart Recipe Finder
 <img width="952" height="407" alt="image" src="https://github.com/user-attachments/assets/a3073499-bc69-45ed-b1f9-b0a368276cc9" />
+<img width="943" height="406" alt="image" src="https://github.com/user-attachments/assets/c5d393f7-7f62-43a8-bff0-cc8c156cfdd2" />
+
 
 
 
