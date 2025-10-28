@@ -1,0 +1,157 @@
+.time-section {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  animation: slideInUp 0.5s ease-out 0.2s backwards;
+}
+
+.time-section:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.time-content {
+  margin-top: 1.5rem;
+  animation: expandDown 0.3s ease-out;
+}
+
+.time-grid {
+  display: flex; /* Changed from grid to flex for horizontal layout */
+  flex-wrap: wrap; /* Wrap on smaller screens */
+  gap: 1rem;
+}
+
+.time-card {
+  background: #f7fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  align-items: center; /* Vertically center icon and label */
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  min-width: 180px; /* Ensure horizontal space */
+}
+
+.time-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.1) 0%,
+    rgba(118, 75, 162, 0.1) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.time-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  border-color: #667eea;
+}
+
+.time-card:hover::before {
+  opacity: 1;
+}
+
+.time-card.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: #667eea;
+  color: white;
+  transform: scale(1.05);
+}
+
+.time-card.active .time-label {
+  color: white;
+}
+
+.time-icon {
+  font-size: 2rem;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.time-card:hover .time-icon {
+  transform: scale(1.1);
+}
+
+.time-card.active .time-icon {
+  transform: scale(1.1) rotate(10deg);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.time-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2d3748;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+  white-space: nowrap; /* Prevent label from wrapping */
+}
+
+/* Animations */
+@keyframes expandDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 300px;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .time-grid {
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+
+  .time-card {
+    flex-direction: row;
+    padding: 0.75rem 1rem;
+    min-width: 140px;
+  }
+
+  .time-icon {
+    font-size: 1.8rem;
+  }
+  .time-label {
+    font-size: 0.85rem;
+  }
+}
