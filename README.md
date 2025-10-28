@@ -1,4 +1,7 @@
 🧑‍🍳 Recipe Ideas – Smart Recipe Finder
+<img width="952" height="407" alt="image" src="https://github.com/user-attachments/assets/a3073499-bc69-45ed-b1f9-b0a368276cc9" />
+
+
 
 Recipe Ideas is a sleek, modern recipe discovery app built with React, designed for busy professionals like Taylor who want to quickly find recipes based on what they have, how they feel, or how much time they’ve got.
 
