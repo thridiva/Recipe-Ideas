@@ -54,7 +54,7 @@ API: TheMealDB
 
 State Persistence: URL search params + sessionStorage
 
-Deployment: Ready for static hosting (Netlify, Vercel, etc.)
+Deployment Link: https://vercel.com/thridivas-projects/recipe-ideas/6p1ip3K3im36xipwX9us5kzd2fvC
 
 🧠 Why URL + SessionStorage?
 Feature Benefit
