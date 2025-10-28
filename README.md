@@ -56,21 +56,6 @@ State Persistence: URL search params + sessionStorage
 
 Deployment: Ready for static hosting (Netlify, Vercel, etc.)
 
-📁 Project Structure
-src/
-├── components/
-│ ├── Header.jsx / .css
-│ ├── IngredientInput.jsx / .css
-│ ├── MoodSelector.jsx / .css
-│ ├── TimeFilter.jsx / .css
-│ ├── RecipeCard.jsx / .css
-│ ├── RecipeResults.jsx / .css
-| ├── RecipeDetails.jsx / .css
-├── utils/
-│ └── mealData.js
-├── App.jsx / .css
-└── index.css
-
 🧠 Why URL + SessionStorage?
 Feature Benefit
 URL Params Enables shareable, bookmarkable searches and smooth browser back/forward navigation.
