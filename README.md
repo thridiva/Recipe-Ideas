@@ -58,8 +58,7 @@ Styling: CSS Modules (Component-scoped styles)
 API: TheMealDB
 
 State Persistence: URL search params + sessionStorage
-
-Deployment Link: https://vercel.com/thridivas-projects/recipe-ideas/6p1ip3K3im36xipwX9us5kzd2fvC
+Deployment Link: https://recipe-ideas-rho-sepia.vercel.app/
 
 🧠 Why URL + SessionStorage?
 Feature Benefit
